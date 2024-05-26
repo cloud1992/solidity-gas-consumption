@@ -70,6 +70,14 @@ contract ForLoopTest is Test {
         );
 
         gasle = gasleft();
+        forLoop.loopForUnchecked1Payable();
+        gasle2 = gasleft();
+        console2.log(
+            "loopForUnchecked1Payable------------------------",
+            gasle - gasle2
+        );
+
+        gasle = gasleft();
         forLoop.loopForUnchecked2();
         gasle2 = gasleft();
         console2.log(

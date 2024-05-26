@@ -13,6 +13,15 @@ contract ForLoop {
         }
     }
 
+    // function to loop from 0 to n unchecked 1, payable
+    function loopForUnchecked1Payable() public view {
+        for (uint i = 0; i < n; ) {
+            unchecked {
+                ++i;
+            }
+        }
+    }
+
     // function to loop from 0 to n unchecked 2
     function loopForUnchecked2() public view {
         for (uint i = 0; i < n; ) {
@@ -24,7 +33,7 @@ contract ForLoop {
 
     // function to loop from 0 to n
     function loopForPostIncrement() public view {
-        for (uint i; i < n; i++) {}
+        for (uint i = 0; i < n; i++) {}
     }
 
     // function to loop from 0 to n without assignation
