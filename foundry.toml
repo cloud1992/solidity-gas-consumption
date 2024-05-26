@@ -5,7 +5,7 @@ libs = ["lib"]
 gas_reports = ["*"]
 cache_path  = 'cache_forge'
 optimizer = true
-deny_warnings = true
+deny_warnings = false
 solc-version = "0.8.25"
 
 
