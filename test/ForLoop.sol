@@ -19,13 +19,16 @@ contract ForLoopTest is Test {
         uint gasle = gasleft();
         forLoop.loopForPostIncrement();
         uint gasle2 = gasleft();
-        console2.log("loopForPostIncrement-----------------", gasle - gasle2);
+        console2.log(
+            "loopForPostIncrement----------------------",
+            gasle - gasle2
+        );
 
         gasle = gasleft();
         forLoop.loopForPostIncrementWithOutAssignation();
         gasle2 = gasleft();
         console2.log(
-            "loopForPostIncrementWithOutAssignation-----",
+            "loopForPostIncrementWithOutAssignation----",
             gasle - gasle2
         );
 
@@ -33,7 +36,7 @@ contract ForLoopTest is Test {
         forLoop.loopForPostIncrementWithOutAssignation1();
         gasle2 = gasleft();
         console2.log(
-            "loopForPostIncrementWithOutAssignation1-----",
+            "loopForPostIncrementWithOutAssignation1---",
             gasle - gasle2
         );
 
@@ -41,7 +44,7 @@ contract ForLoopTest is Test {
         forLoop.loopWhile();
         gasle2 = gasleft();
         console2.log(
-            "loopWhile--------------------------------",
+            "loopWhile---------------------------------",
             gasle - gasle2
         );
 
@@ -49,7 +52,7 @@ contract ForLoopTest is Test {
         forLoop.loopDoWhile();
         gasle2 = gasleft();
         console2.log(
-            "loopDoWhile------------------------------",
+            "loopDoWhile-------------------------------",
             gasle - gasle2
         );
 
@@ -57,7 +60,7 @@ contract ForLoopTest is Test {
         forLoop.loopForPreIncrement();
         gasle2 = gasleft();
         console2.log(
-            "loopForPreIncrement----------------------",
+            "loopForPreIncrement-----------------------",
             gasle - gasle2
         );
 
@@ -65,7 +68,7 @@ contract ForLoopTest is Test {
         forLoop.loopForUnchecked1();
         gasle2 = gasleft();
         console2.log(
-            "loopForUnchecked1------------------------",
+            "loopForUnchecked1-------------------------",
             gasle - gasle2
         );
 
@@ -73,7 +76,7 @@ contract ForLoopTest is Test {
         forLoop.loopForUnchecked1Payable();
         gasle2 = gasleft();
         console2.log(
-            "loopForUnchecked1Payable------------------------",
+            "loopForUnchecked1Payable------------------",
             gasle - gasle2
         );
 
@@ -81,32 +84,8 @@ contract ForLoopTest is Test {
         forLoop.loopForUnchecked2();
         gasle2 = gasleft();
         console2.log(
-            "loopForUnchecked2------------------------",
+            "loopForUnchecked2-------------------------",
             gasle - gasle2
         );
     }
-
-    // function testLoopForPostIncrementWithOutAssignation() public view {
-    //     forLoop.loopForPostIncrementWithOutAssignation();
-    // }
-
-    // function testLoopWhile() public view {
-    //     forLoop.loopWhile();
-    // }
-
-    // function testLoopDoWhile() public view {
-    //     forLoop.loopDoWhile();
-    // }
-
-    // function testLoopForPreIncrement() public view {
-    //     forLoop.loopForPreIncrement();
-    // }
-
-    // function testLoopForUnchecked1() public view {
-    //     forLoop.loopForUnchecked1();
-    // }
-
-    // function testLoopForUnchecked2() public view {
-    //     forLoop.loopForUnchecked2();
-    // }
 }
