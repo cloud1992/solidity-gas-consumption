@@ -14,7 +14,7 @@ contract ForLoop {
     }
 
     // function to loop from 0 to n unchecked 1, payable
-    function loopForUnchecked1Payable() public view {
+    function loopForUnchecked1Payable() public payable {
         for (uint i = 0; i < n; ) {
             unchecked {
                 ++i;

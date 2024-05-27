@@ -13,7 +13,7 @@ contract ForLoopTest is Test {
         forLoop = new ForLoop();
     }
 
-    function testLoopForPostIncrement() public view {
+    function testLoopForPostIncrement() public {
         forLoop.loopForPostIncrement();
 
         uint gasle = gasleft();
