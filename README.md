@@ -1,6 +1,7 @@
 ## The objective of this repository is to compare gas consumption of different approaches to accomplishing the same task, aiming to enhance efficiency when writing Solidity code.
 
-
+###
+You need to install Foundry: https://book.getfoundry.sh/
 
 ### Test
 Each case study will have a contract with different functions and we will use a test script to compare gas.
