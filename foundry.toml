@@ -4,10 +4,11 @@ out = "out"
 libs = ["lib"]
 gas_reports = ["*"]
 cache_path  = 'cache_forge'
-evm_version = "cancun"
 optimizer = true
 deny_warnings = false
 solc-version = "0.8.25"
+evm_version = "cancun"
+ignored_error_codes = ["transient-storage"]
 
 
 
